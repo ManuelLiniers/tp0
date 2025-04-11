@@ -70,7 +70,7 @@ t_log* iniciar_logger(void)
 
 t_config* iniciar_config(void)
 {
-	t_config* nuevo_config = config_create("cliente.config");
+	t_config* nuevo_config = config_create("/home/utnso/tp0/client/cliente.config");
 	if(nuevo_config == NULL) {
 		perror("Error al intentar cargar el config");
 		exit(EXIT_FAILURE);
